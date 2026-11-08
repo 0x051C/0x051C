@@ -38,7 +38,7 @@
 **Web:** Django · htmx · HTML · CSS
 **Data:** PostgreSQL · MongoDB
 **Game dev:** Godot 4
-**Dev tools:** Zed · Git · Manjaro 🐧 · labwc (Wayland)
+**Dev tools:** Neovim · Zed · Git · Manjaro 🐧 · labwc (Wayland)
 
 </td>
 </tr>
@@ -55,7 +55,7 @@
 | [**rpg-campaign-code**](https://github.com/0x051C/rpg-campaign-code) | Warcraft III-style campaign in Godot 4 | GDScript |
 | [**CalendarBot**](https://github.com/0x051C/CalendarBot) | Discord event bot with availability tracking and iCal export | JavaScript |
 | [**turing_gt_machine**](https://github.com/0x051C/turing_gt_machine) | Turing machine comparing unary-encoded integers | Python |
-| [**ed-config**](https://github.com/0x051C/ed-config) | Personal editor configuration | Neovim |
+| [**ed-config**](https://github.com/0x051C/ed-config) | Personal Zed editor configuration | Zed |
 
 ---
 
