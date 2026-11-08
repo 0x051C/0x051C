@@ -27,7 +27,7 @@
 - 📍 Toronto, Ontario
 - 🔭 Currently: ETL pipelines & dashboards
 - 🎮 Side project: game dev in Godot 4
-- ⚡ Happiest in a terminal with Neovim
+- ⚡ Happiest in a terminal, editing in Zed
 - 🥧 Tinkering with Debian on a Raspberry Pi Zero 2 W
 
 </td>
@@ -38,7 +38,7 @@
 **Web:** Django · htmx · HTML · CSS
 **Data:** PostgreSQL · MongoDB
 **Game dev:** Godot 4
-**Dev tools:** Neovim · Git · Manjaro 🐧 · labwc (Wayland)
+**Dev tools:** Zed · Git · Manjaro 🐧 · labwc (Wayland)
 
 </td>
 </tr>
