@@ -59,19 +59,6 @@
 
 ---
 
-### 📊 GitHub stats
-
-<div align="center">
-
-<img height="180" alt="Stats" src="https://github-readme-stats.vercel.app/api?username=0x051C&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-<img height="180" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=0x051C&layout=compact&theme=tokyonight&hide_border=true" />
-
-<img alt="Streak" src="https://streak-stats.demolab.com?user=0x051C&theme=tokyonight&hide_border=true" />
-
-</div>
-
----
-
 <div align="center">
 
 <sub>Built with a bit of ✨ and too many open tabs.</sub>
