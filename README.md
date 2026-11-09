@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=3000&pause=800&color=50DC3C&center=true&vCenter=true&width=700&lines=Hi,+I'm+b????.Ygrt;Software+Engineer+%7C+Toronto;Python+%C2%B7+Django+%C2%B7+PostgreSQL+%C2%B7+MongoDB;Building+ETL+pipelines+and+game+tooling" alt="Typing SVG" />
+<img src="assets/typing.svg" alt="Typing SVG" />
 
 <br/>
 

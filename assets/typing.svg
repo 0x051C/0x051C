@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 50" width="700" height="50">
+<style>
+text{fill:#50DC3C;font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:26px;font-weight:600}
+@keyframes s0{0%,0.00%{opacity:0}1.00%,24.00%{opacity:1}25.00%,100%{opacity:0}}
+.l0{animation:s0 15.2s linear infinite;opacity:0}
+@keyframes s1{0%,25.00%{opacity:0}26.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
+.l1{animation:s1 15.2s linear infinite;opacity:0}
+@keyframes s2{0%,50.00%{opacity:0}51.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
+.l2{animation:s2 15.2s linear infinite;opacity:0}
+@keyframes s3{0%,75.00%{opacity:0}76.00%,99.00%{opacity:1}100.00%,100%{opacity:0}}
+.l3{animation:s3 15.2s linear infinite;opacity:0}
+.c{animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+</style>
+<text class="l0" x="350" y="25" text-anchor="middle" dominant-baseline="middle">Hi, I&#x27;m b????.Ygrt<tspan class="c">_</tspan></text>
+<text class="l1" x="350" y="25" text-anchor="middle" dominant-baseline="middle">Software Engineer | Toronto<tspan class="c">_</tspan></text>
+<text class="l2" x="350" y="25" text-anchor="middle" dominant-baseline="middle">Python · Django · PostgreSQL · MongoDB<tspan class="c">_</tspan></text>
+<text class="l3" x="350" y="25" text-anchor="middle" dominant-baseline="middle">Building ETL pipelines and game tooling<tspan class="c">_</tspan></text>
+</svg>
