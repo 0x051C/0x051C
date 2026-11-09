@@ -38,7 +38,7 @@
 **Web:** Django · htmx · HTML · CSS
 **Data:** PostgreSQL · MongoDB
 **Game dev:** Godot 4
-**Dev tools:** Neovim · Zed · Git · Manjaro 🐧 · labwc (Wayland)
+**Dev tools:** Neovim(LazyVim) · Zed · LazyGit · Manjaro 🐧 · labwc (Wayland)
 
 </td>
 </tr>
