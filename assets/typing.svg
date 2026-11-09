@@ -1,19 +1,230 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 50" width="700" height="50">
 <style>
-text{fill:#50DC3C;font-family:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;font-size:26px;font-weight:600}
-@keyframes s0{0%,0.00%{opacity:0}1.00%,24.00%{opacity:1}25.00%,100%{opacity:0}}
-.l0{animation:s0 15.2s linear infinite;opacity:0}
-@keyframes s1{0%,25.00%{opacity:0}26.00%,49.00%{opacity:1}50.00%,100%{opacity:0}}
-.l1{animation:s1 15.2s linear infinite;opacity:0}
-@keyframes s2{0%,50.00%{opacity:0}51.00%,74.00%{opacity:1}75.00%,100%{opacity:0}}
-.l2{animation:s2 15.2s linear infinite;opacity:0}
-@keyframes s3{0%,75.00%{opacity:0}76.00%,99.00%{opacity:1}100.00%,100%{opacity:0}}
-.l3{animation:s3 15.2s linear infinite;opacity:0}
-.c{animation:blink 1s steps(1) infinite}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:600;src:url(data:font/truetype;base64,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AAEAAAABAAgAAQLmAAsABgAAAAEACAADAAEDOgABAtgAAAABAAAAHAABAAAAAQAIAAEAZgAaAAEAAAABAAgAAQBYAA0ABgAAAAQAQgAyACAADgADAAAAAQBEAAEARAABAAAAGgADAAEC7AABADIAAAABAAAAGQADAAAAAQAgAAIAIAAgAAAAAwABABAAAQAQAAEAEAAAAAEAAQAnAAEAAAABAAgAAQKm//QABgAAAAEACAADAAECngABApgAAAABAAAAFwABAAAAAQAIAAECfgADAAYAAAABAAgAAwABAnYAAQJwAAAAAQAAABUAAQAAAAEACAABAlYABAAGAAAAAgAeAAoAAwABAkwAAQJGAAECRgABAAAAEwADAAICOAI4AAECMgAAAAEAAAASAAEAAAABAAgAAQIWAAgAAQAAAAEACAABAggABQAGAAAAAwA4ACIADAADAAEB/AABAfYAAgH2AfYAAQAAABAAAwACAeYB5gABAeAAAQHgAAEAAAAPAAMAAwHQAdAB0AABAcoAAAABAAAADgABAAAAAQAIAAEBVgANAAYAAAAFAF4ATAA4ACQAEAADAAAAAQFAAAIBQAFAAAEAAAAMAAMAAQGIAAEBLAABASwAAQAAAAsAAwACAXQBdAABARgAAAABAAAACgADAAAAAQEEAAMBBAEEAQQAAAADAAEA8gABAPIAAgDyAPIAAAABAAAAAQAIAAEA2AAdAAEAAAABAAgAAQDKAAwABgAAAAQAQgAyACAADgADAAAAAQC2AAEAtgABAAAACAADAAEBAAABAKQAAAABAAAABwADAAAAAQCSAAIAkgCSAAAAAwABAIIAAQCCAAEAggAAAAEAAAABAAgAAgAKAAIAQQAyAAEAAgAkACgABgAAAAQAQgAyACAADgADAAAAAQBKAAEARAABAAAABQADAAEAlAABADIAAAABAAAABQADAAAAAQAmAAIAIAAgAAAAAwABABYAAQAWAAEAEAAAAAEAAQAoAAEAAQAkAAEAAAABAAgAAQBI//UABgAAAAEACAADAAEAQAABADoAAAABAAAAAwABAAAAAQAIAAEAIP/2AAYAAAABAAgAAwABABgAAQASAAAAAQAAAAEAAQABADkAAQABAEEAAAADAFoAAAH+AtoAAwAGAAkAADMRIRElIREBASFaAaT+ogEs/sABLP7UAtr9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) format('truetype')}
+text{fill:#50DC3C;font-family:'JetBrains Mono',monospace;font-size:24px;font-weight:600;letter-spacing:0}
+tspan{visibility:hidden}
+rect{fill:#50DC3C}
+.blink{animation:blink 1s steps(1,end) infinite}
 @keyframes blink{50%{opacity:0}}
+@keyframes c0_0{0.000%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_0{animation:c0_0 12.830s linear infinite}
+@keyframes c0_1{0.000%{visibility:hidden}0.468%{visibility:hidden}0.546%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_1{animation:c0_1 12.830s linear infinite}
+@keyframes c0_2{0.000%{visibility:hidden}1.013%{visibility:hidden}1.091%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_2{animation:c0_2 12.830s linear infinite}
+@keyframes c0_3{0.000%{visibility:hidden}1.559%{visibility:hidden}1.637%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_3{animation:c0_3 12.830s linear infinite}
+@keyframes c0_4{0.000%{visibility:hidden}2.104%{visibility:hidden}2.182%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_4{animation:c0_4 12.830s linear infinite}
+@keyframes c0_5{0.000%{visibility:hidden}2.650%{visibility:hidden}2.728%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_5{animation:c0_5 12.830s linear infinite}
+@keyframes c0_6{0.000%{visibility:hidden}3.196%{visibility:hidden}3.274%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_6{animation:c0_6 12.830s linear infinite}
+@keyframes c0_7{0.000%{visibility:hidden}3.741%{visibility:hidden}3.819%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_7{animation:c0_7 12.830s linear infinite}
+@keyframes c0_8{0.000%{visibility:hidden}4.287%{visibility:hidden}4.365%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_8{animation:c0_8 12.830s linear infinite}
+@keyframes c0_9{0.000%{visibility:hidden}4.832%{visibility:hidden}4.910%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_9{animation:c0_9 12.830s linear infinite}
+@keyframes c0_10{0.000%{visibility:hidden}5.378%{visibility:hidden}5.456%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_10{animation:c0_10 12.830s linear infinite}
+@keyframes c0_11{0.000%{visibility:hidden}5.924%{visibility:hidden}6.002%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_11{animation:c0_11 12.830s linear infinite}
+@keyframes c0_12{0.000%{visibility:hidden}6.469%{visibility:hidden}6.547%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_12{animation:c0_12 12.830s linear infinite}
+@keyframes c0_13{0.000%{visibility:hidden}7.015%{visibility:hidden}7.093%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_13{animation:c0_13 12.830s linear infinite}
+@keyframes c0_14{0.000%{visibility:hidden}7.560%{visibility:hidden}7.638%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_14{animation:c0_14 12.830s linear infinite}
+@keyframes c0_15{0.000%{visibility:hidden}8.106%{visibility:hidden}8.184%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_15{animation:c0_15 12.830s linear infinite}
+@keyframes c0_16{0.000%{visibility:hidden}8.652%{visibility:hidden}8.730%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_16{animation:c0_16 12.830s linear infinite}
+@keyframes c0_17{0.000%{visibility:hidden}9.197%{visibility:hidden}9.275%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_17{animation:c0_17 12.830s linear infinite}
+@keyframes c0_18{0.000%{visibility:hidden}9.743%{visibility:hidden}9.821%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_18{animation:c0_18 12.830s linear infinite}
+@keyframes c0_19{0.000%{visibility:hidden}10.288%{visibility:hidden}10.366%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_19{animation:c0_19 12.830s linear infinite}
+@keyframes c0_20{0.000%{visibility:hidden}10.834%{visibility:hidden}10.912%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_20{animation:c0_20 12.830s linear infinite}
+@keyframes c0_21{0.000%{visibility:hidden}11.380%{visibility:hidden}11.458%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_21{animation:c0_21 12.830s linear infinite}
+@keyframes c0_22{0.000%{visibility:hidden}11.925%{visibility:hidden}12.003%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_22{animation:c0_22 12.830s linear infinite}
+@keyframes c0_23{0.000%{visibility:hidden}12.471%{visibility:hidden}12.549%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_23{animation:c0_23 12.830s linear infinite}
+@keyframes c0_24{0.000%{visibility:hidden}13.016%{visibility:hidden}13.094%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_24{animation:c0_24 12.830s linear infinite}
+@keyframes c0_25{0.000%{visibility:hidden}13.562%{visibility:hidden}13.640%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_25{animation:c0_25 12.830s linear infinite}
+@keyframes c0_26{0.000%{visibility:hidden}14.108%{visibility:hidden}14.186%{visibility:visible}27.124%{visibility:visible}27.202%{visibility:hidden}100.000%{visibility:hidden}}
+.c0_26{animation:c0_26 12.830s linear infinite}
+@keyframes k0{0.000%{transform:translateX(14.40px);visibility:visible;animation-timing-function:steps(26,end);}14.186%{transform:translateX(388.80px);visibility:visible;}27.124%{transform:translateX(388.80px);visibility:visible;}27.202%{transform:translateX(388.80px);visibility:hidden;}100.000%{transform:translateX(388.80px);visibility:hidden;}}
+.k0{animation:k0 12.830s linear infinite}
+@keyframes c1_0{0.000%{visibility:hidden}29.072%{visibility:hidden}29.150%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_0{animation:c1_0 12.830s linear infinite}
+@keyframes c1_1{0.000%{visibility:hidden}29.618%{visibility:hidden}29.696%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_1{animation:c1_1 12.830s linear infinite}
+@keyframes c1_2{0.000%{visibility:hidden}30.164%{visibility:hidden}30.242%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_2{animation:c1_2 12.830s linear infinite}
+@keyframes c1_3{0.000%{visibility:hidden}30.709%{visibility:hidden}30.787%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_3{animation:c1_3 12.830s linear infinite}
+@keyframes c1_4{0.000%{visibility:hidden}31.255%{visibility:hidden}31.333%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_4{animation:c1_4 12.830s linear infinite}
+@keyframes c1_5{0.000%{visibility:hidden}31.800%{visibility:hidden}31.878%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_5{animation:c1_5 12.830s linear infinite}
+@keyframes c1_6{0.000%{visibility:hidden}32.346%{visibility:hidden}32.424%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_6{animation:c1_6 12.830s linear infinite}
+@keyframes c1_7{0.000%{visibility:hidden}32.892%{visibility:hidden}32.970%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_7{animation:c1_7 12.830s linear infinite}
+@keyframes c1_8{0.000%{visibility:hidden}33.437%{visibility:hidden}33.515%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_8{animation:c1_8 12.830s linear infinite}
+@keyframes c1_9{0.000%{visibility:hidden}33.983%{visibility:hidden}34.061%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_9{animation:c1_9 12.830s linear infinite}
+@keyframes c1_10{0.000%{visibility:hidden}34.528%{visibility:hidden}34.606%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_10{animation:c1_10 12.830s linear infinite}
+@keyframes c1_11{0.000%{visibility:hidden}35.074%{visibility:hidden}35.152%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_11{animation:c1_11 12.830s linear infinite}
+@keyframes c1_12{0.000%{visibility:hidden}35.620%{visibility:hidden}35.698%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_12{animation:c1_12 12.830s linear infinite}
+@keyframes c1_13{0.000%{visibility:hidden}36.165%{visibility:hidden}36.243%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_13{animation:c1_13 12.830s linear infinite}
+@keyframes c1_14{0.000%{visibility:hidden}36.711%{visibility:hidden}36.789%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_14{animation:c1_14 12.830s linear infinite}
+@keyframes c1_15{0.000%{visibility:hidden}37.256%{visibility:hidden}37.334%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_15{animation:c1_15 12.830s linear infinite}
+@keyframes c1_16{0.000%{visibility:hidden}37.802%{visibility:hidden}37.880%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_16{animation:c1_16 12.830s linear infinite}
+@keyframes c1_17{0.000%{visibility:hidden}38.348%{visibility:hidden}38.426%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_17{animation:c1_17 12.830s linear infinite}
+@keyframes c1_18{0.000%{visibility:hidden}38.893%{visibility:hidden}38.971%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_18{animation:c1_18 12.830s linear infinite}
+@keyframes c1_19{0.000%{visibility:hidden}39.439%{visibility:hidden}39.517%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_19{animation:c1_19 12.830s linear infinite}
+@keyframes c1_20{0.000%{visibility:hidden}39.984%{visibility:hidden}40.062%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_20{animation:c1_20 12.830s linear infinite}
+@keyframes c1_21{0.000%{visibility:hidden}40.530%{visibility:hidden}40.608%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_21{animation:c1_21 12.830s linear infinite}
+@keyframes c1_22{0.000%{visibility:hidden}41.076%{visibility:hidden}41.154%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_22{animation:c1_22 12.830s linear infinite}
+@keyframes c1_23{0.000%{visibility:hidden}41.621%{visibility:hidden}41.699%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_23{animation:c1_23 12.830s linear infinite}
+@keyframes c1_24{0.000%{visibility:hidden}42.167%{visibility:hidden}42.245%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_24{animation:c1_24 12.830s linear infinite}
+@keyframes c1_25{0.000%{visibility:hidden}42.712%{visibility:hidden}42.790%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_25{animation:c1_25 12.830s linear infinite}
+@keyframes c1_26{0.000%{visibility:hidden}43.258%{visibility:hidden}43.336%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_26{animation:c1_26 12.830s linear infinite}
+@keyframes c1_27{0.000%{visibility:hidden}43.804%{visibility:hidden}43.882%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_27{animation:c1_27 12.830s linear infinite}
+@keyframes c1_28{0.000%{visibility:hidden}44.349%{visibility:hidden}44.427%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_28{animation:c1_28 12.830s linear infinite}
+@keyframes c1_29{0.000%{visibility:hidden}44.895%{visibility:hidden}44.973%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_29{animation:c1_29 12.830s linear infinite}
+@keyframes c1_30{0.000%{visibility:hidden}45.440%{visibility:hidden}45.518%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_30{animation:c1_30 12.830s linear infinite}
+@keyframes c1_31{0.000%{visibility:hidden}45.986%{visibility:hidden}46.064%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_31{animation:c1_31 12.830s linear infinite}
+@keyframes c1_32{0.000%{visibility:hidden}46.532%{visibility:hidden}46.610%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_32{animation:c1_32 12.830s linear infinite}
+@keyframes c1_33{0.000%{visibility:hidden}47.077%{visibility:hidden}47.155%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_33{animation:c1_33 12.830s linear infinite}
+@keyframes c1_34{0.000%{visibility:hidden}47.623%{visibility:hidden}47.701%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_34{animation:c1_34 12.830s linear infinite}
+@keyframes c1_35{0.000%{visibility:hidden}48.168%{visibility:hidden}48.246%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_35{animation:c1_35 12.830s linear infinite}
+@keyframes c1_36{0.000%{visibility:hidden}48.714%{visibility:hidden}48.792%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_36{animation:c1_36 12.830s linear infinite}
+@keyframes c1_37{0.000%{visibility:hidden}49.260%{visibility:hidden}49.337%{visibility:visible}62.276%{visibility:visible}62.354%{visibility:hidden}100.000%{visibility:hidden}}
+.c1_37{animation:c1_37 12.830s linear infinite}
+@keyframes k1{0.000%{transform:translateX(14.40px);visibility:hidden;}29.072%{transform:translateX(14.40px);visibility:hidden;}29.150%{transform:translateX(14.40px);visibility:visible;animation-timing-function:steps(37,end);}49.337%{transform:translateX(547.20px);visibility:visible;}62.276%{transform:translateX(547.20px);visibility:visible;}62.354%{transform:translateX(547.20px);visibility:hidden;}100.000%{transform:translateX(547.20px);visibility:hidden;}}
+.k1{animation:k1 12.830s linear infinite}
+@keyframes c2_0{0.000%{visibility:hidden}64.224%{visibility:hidden}64.302%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_0{animation:c2_0 12.830s linear infinite}
+@keyframes c2_1{0.000%{visibility:hidden}64.770%{visibility:hidden}64.848%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_1{animation:c2_1 12.830s linear infinite}
+@keyframes c2_2{0.000%{visibility:hidden}65.316%{visibility:hidden}65.394%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_2{animation:c2_2 12.830s linear infinite}
+@keyframes c2_3{0.000%{visibility:hidden}65.861%{visibility:hidden}65.939%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_3{animation:c2_3 12.830s linear infinite}
+@keyframes c2_4{0.000%{visibility:hidden}66.407%{visibility:hidden}66.485%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_4{animation:c2_4 12.830s linear infinite}
+@keyframes c2_5{0.000%{visibility:hidden}66.952%{visibility:hidden}67.030%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_5{animation:c2_5 12.830s linear infinite}
+@keyframes c2_6{0.000%{visibility:hidden}67.498%{visibility:hidden}67.576%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_6{animation:c2_6 12.830s linear infinite}
+@keyframes c2_7{0.000%{visibility:hidden}68.044%{visibility:hidden}68.122%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_7{animation:c2_7 12.830s linear infinite}
+@keyframes c2_8{0.000%{visibility:hidden}68.589%{visibility:hidden}68.667%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_8{animation:c2_8 12.830s linear infinite}
+@keyframes c2_9{0.000%{visibility:hidden}69.135%{visibility:hidden}69.213%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_9{animation:c2_9 12.830s linear infinite}
+@keyframes c2_10{0.000%{visibility:hidden}69.680%{visibility:hidden}69.758%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_10{animation:c2_10 12.830s linear infinite}
+@keyframes c2_11{0.000%{visibility:hidden}70.226%{visibility:hidden}70.304%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_11{animation:c2_11 12.830s linear infinite}
+@keyframes c2_12{0.000%{visibility:hidden}70.772%{visibility:hidden}70.850%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_12{animation:c2_12 12.830s linear infinite}
+@keyframes c2_13{0.000%{visibility:hidden}71.317%{visibility:hidden}71.395%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_13{animation:c2_13 12.830s linear infinite}
+@keyframes c2_14{0.000%{visibility:hidden}71.863%{visibility:hidden}71.941%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_14{animation:c2_14 12.830s linear infinite}
+@keyframes c2_15{0.000%{visibility:hidden}72.408%{visibility:hidden}72.486%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_15{animation:c2_15 12.830s linear infinite}
+@keyframes c2_16{0.000%{visibility:hidden}72.954%{visibility:hidden}73.032%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_16{animation:c2_16 12.830s linear infinite}
+@keyframes c2_17{0.000%{visibility:hidden}73.500%{visibility:hidden}73.578%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_17{animation:c2_17 12.830s linear infinite}
+@keyframes c2_18{0.000%{visibility:hidden}74.045%{visibility:hidden}74.123%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_18{animation:c2_18 12.830s linear infinite}
+@keyframes c2_19{0.000%{visibility:hidden}74.591%{visibility:hidden}74.669%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_19{animation:c2_19 12.830s linear infinite}
+@keyframes c2_20{0.000%{visibility:hidden}75.136%{visibility:hidden}75.214%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_20{animation:c2_20 12.830s linear infinite}
+@keyframes c2_21{0.000%{visibility:hidden}75.682%{visibility:hidden}75.760%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_21{animation:c2_21 12.830s linear infinite}
+@keyframes c2_22{0.000%{visibility:hidden}76.228%{visibility:hidden}76.306%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_22{animation:c2_22 12.830s linear infinite}
+@keyframes c2_23{0.000%{visibility:hidden}76.773%{visibility:hidden}76.851%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_23{animation:c2_23 12.830s linear infinite}
+@keyframes c2_24{0.000%{visibility:hidden}77.319%{visibility:hidden}77.397%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_24{animation:c2_24 12.830s linear infinite}
+@keyframes c2_25{0.000%{visibility:hidden}77.864%{visibility:hidden}77.942%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_25{animation:c2_25 12.830s linear infinite}
+@keyframes c2_26{0.000%{visibility:hidden}78.410%{visibility:hidden}78.488%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_26{animation:c2_26 12.830s linear infinite}
+@keyframes c2_27{0.000%{visibility:hidden}78.956%{visibility:hidden}79.034%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_27{animation:c2_27 12.830s linear infinite}
+@keyframes c2_28{0.000%{visibility:hidden}79.501%{visibility:hidden}79.579%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_28{animation:c2_28 12.830s linear infinite}
+@keyframes c2_29{0.000%{visibility:hidden}80.047%{visibility:hidden}80.125%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_29{animation:c2_29 12.830s linear infinite}
+@keyframes c2_30{0.000%{visibility:hidden}80.592%{visibility:hidden}80.670%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_30{animation:c2_30 12.830s linear infinite}
+@keyframes c2_31{0.000%{visibility:hidden}81.138%{visibility:hidden}81.216%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_31{animation:c2_31 12.830s linear infinite}
+@keyframes c2_32{0.000%{visibility:hidden}81.684%{visibility:hidden}81.761%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_32{animation:c2_32 12.830s linear infinite}
+@keyframes c2_33{0.000%{visibility:hidden}82.229%{visibility:hidden}82.307%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_33{animation:c2_33 12.830s linear infinite}
+@keyframes c2_34{0.000%{visibility:hidden}82.775%{visibility:hidden}82.853%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_34{animation:c2_34 12.830s linear infinite}
+@keyframes c2_35{0.000%{visibility:hidden}83.320%{visibility:hidden}83.398%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_35{animation:c2_35 12.830s linear infinite}
+@keyframes c2_36{0.000%{visibility:hidden}83.866%{visibility:hidden}83.944%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_36{animation:c2_36 12.830s linear infinite}
+@keyframes c2_37{0.000%{visibility:hidden}84.412%{visibility:hidden}84.489%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_37{animation:c2_37 12.830s linear infinite}
+@keyframes c2_38{0.000%{visibility:hidden}84.957%{visibility:hidden}85.035%{visibility:visible}97.973%{visibility:visible}98.051%{visibility:hidden}100.000%{visibility:hidden}}
+.c2_38{animation:c2_38 12.830s linear infinite}
+@keyframes k2{0.000%{transform:translateX(14.40px);visibility:hidden;}64.224%{transform:translateX(14.40px);visibility:hidden;}64.302%{transform:translateX(14.40px);visibility:visible;animation-timing-function:steps(38,end);}85.035%{transform:translateX(561.60px);visibility:visible;}97.973%{transform:translateX(561.60px);visibility:visible;}98.051%{transform:translateX(561.60px);visibility:hidden;}100.000%{transform:translateX(561.60px);visibility:hidden;}}
+.k2{animation:k2 12.830s linear infinite}
 </style>
-<text class="l0" x="350" y="25" text-anchor="middle" dominant-baseline="middle">Hi, I&#x27;m b????.Ygrt<tspan class="c">_</tspan></text>
-<text class="l1" x="350" y="25" text-anchor="middle" dominant-baseline="middle">Software Engineer | Toronto<tspan class="c">_</tspan></text>
-<text class="l2" x="350" y="25" text-anchor="middle" dominant-baseline="middle">Python · Django · PostgreSQL · MongoDB<tspan class="c">_</tspan></text>
-<text class="l3" x="350" y="25" text-anchor="middle" dominant-baseline="middle">Building ETL pipelines and game tooling<tspan class="c">_</tspan></text>
+<text y="33"><tspan class="c0_0" x="155.60">S</tspan><tspan class="c0_1" x="170.00">o</tspan><tspan class="c0_2" x="184.40">f</tspan><tspan class="c0_3" x="198.80">t</tspan><tspan class="c0_4" x="213.20">w</tspan><tspan class="c0_5" x="227.60">a</tspan><tspan class="c0_6" x="242.00">r</tspan><tspan class="c0_7" x="256.40">e</tspan><tspan class="c0_8" x="270.80"> </tspan><tspan class="c0_9" x="285.20">E</tspan><tspan class="c0_10" x="299.60">n</tspan><tspan class="c0_11" x="314.00">g</tspan><tspan class="c0_12" x="328.40">i</tspan><tspan class="c0_13" x="342.80">n</tspan><tspan class="c0_14" x="357.20">e</tspan><tspan class="c0_15" x="371.60">e</tspan><tspan class="c0_16" x="386.00">r</tspan><tspan class="c0_17" x="400.40"> </tspan><tspan class="c0_18" x="414.80">|</tspan><tspan class="c0_19" x="429.20"> </tspan><tspan class="c0_20" x="443.60">T</tspan><tspan class="c0_21" x="458.00">o</tspan><tspan class="c0_22" x="472.40">r</tspan><tspan class="c0_23" x="486.80">o</tspan><tspan class="c0_24" x="501.20">n</tspan><tspan class="c0_25" x="515.60">t</tspan><tspan class="c0_26" x="530.00">o</tspan></text>
+<g class="k0"><rect class="blink" x="156.60" y="36" width="12.40" height="3"/></g>
+<text y="33"><tspan class="c1_0" x="76.40">P</tspan><tspan class="c1_1" x="90.80">y</tspan><tspan class="c1_2" x="105.20">t</tspan><tspan class="c1_3" x="119.60">h</tspan><tspan class="c1_4" x="134.00">o</tspan><tspan class="c1_5" x="148.40">n</tspan><tspan class="c1_6" x="162.80"> </tspan><tspan class="c1_7" x="177.20">·</tspan><tspan class="c1_8" x="191.60"> </tspan><tspan class="c1_9" x="206.00">D</tspan><tspan class="c1_10" x="220.40">j</tspan><tspan class="c1_11" x="234.80">a</tspan><tspan class="c1_12" x="249.20">n</tspan><tspan class="c1_13" x="263.60">g</tspan><tspan class="c1_14" x="278.00">o</tspan><tspan class="c1_15" x="292.40"> </tspan><tspan class="c1_16" x="306.80">·</tspan><tspan class="c1_17" x="321.20"> </tspan><tspan class="c1_18" x="335.60">P</tspan><tspan class="c1_19" x="350.00">o</tspan><tspan class="c1_20" x="364.40">s</tspan><tspan class="c1_21" x="378.80">t</tspan><tspan class="c1_22" x="393.20">g</tspan><tspan class="c1_23" x="407.60">r</tspan><tspan class="c1_24" x="422.00">e</tspan><tspan class="c1_25" x="436.40">S</tspan><tspan class="c1_26" x="450.80">Q</tspan><tspan class="c1_27" x="465.20">L</tspan><tspan class="c1_28" x="479.60"> </tspan><tspan class="c1_29" x="494.00">·</tspan><tspan class="c1_30" x="508.40"> </tspan><tspan class="c1_31" x="522.80">M</tspan><tspan class="c1_32" x="537.20">o</tspan><tspan class="c1_33" x="551.60">n</tspan><tspan class="c1_34" x="566.00">g</tspan><tspan class="c1_35" x="580.40">o</tspan><tspan class="c1_36" x="594.80">D</tspan><tspan class="c1_37" x="609.20">B</tspan></text>
+<g class="k1"><rect class="blink" x="77.40" y="36" width="12.40" height="3"/></g>
+<text y="33"><tspan class="c2_0" x="69.20">B</tspan><tspan class="c2_1" x="83.60">u</tspan><tspan class="c2_2" x="98.00">i</tspan><tspan class="c2_3" x="112.40">l</tspan><tspan class="c2_4" x="126.80">d</tspan><tspan class="c2_5" x="141.20">i</tspan><tspan class="c2_6" x="155.60">n</tspan><tspan class="c2_7" x="170.00">g</tspan><tspan class="c2_8" x="184.40"> </tspan><tspan class="c2_9" x="198.80">E</tspan><tspan class="c2_10" x="213.20">T</tspan><tspan class="c2_11" x="227.60">L</tspan><tspan class="c2_12" x="242.00"> </tspan><tspan class="c2_13" x="256.40">p</tspan><tspan class="c2_14" x="270.80">i</tspan><tspan class="c2_15" x="285.20">p</tspan><tspan class="c2_16" x="299.60">e</tspan><tspan class="c2_17" x="314.00">l</tspan><tspan class="c2_18" x="328.40">i</tspan><tspan class="c2_19" x="342.80">n</tspan><tspan class="c2_20" x="357.20">e</tspan><tspan class="c2_21" x="371.60">s</tspan><tspan class="c2_22" x="386.00"> </tspan><tspan class="c2_23" x="400.40">a</tspan><tspan class="c2_24" x="414.80">n</tspan><tspan class="c2_25" x="429.20">d</tspan><tspan class="c2_26" x="443.60"> </tspan><tspan class="c2_27" x="458.00">g</tspan><tspan class="c2_28" x="472.40">a</tspan><tspan class="c2_29" x="486.80">m</tspan><tspan class="c2_30" x="501.20">e</tspan><tspan class="c2_31" x="515.60"> </tspan><tspan class="c2_32" x="530.00">t</tspan><tspan class="c2_33" x="544.40">o</tspan><tspan class="c2_34" x="558.80">o</tspan><tspan class="c2_35" x="573.20">l</tspan><tspan class="c2_36" x="587.60">i</tspan><tspan class="c2_37" x="602.00">n</tspan><tspan class="c2_38" x="616.40">g</tspan></text>
+<g class="k2"><rect class="blink" x="70.20" y="36" width="12.40" height="3"/></g>
 </svg>
